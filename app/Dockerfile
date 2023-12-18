@@ -3,7 +3,7 @@ FROM python:3.11.4-slim-buster
 LABEL authors="jake"
 
 # set work directory
-WORKDIR /app
+WORKDIR /usr/src/app
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -16,3 +16,4 @@ RUN pip install -r requirements.txt
 
 # copy project
 COPY . .
+CMD ["python3", "manage.py", "runserver"]
