@@ -3,7 +3,7 @@ FROM python:3.11.4-slim-buster
 LABEL authors="jake"
 
 # set work directory
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
